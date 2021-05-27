@@ -1,0 +1,377 @@
+
+
+
+html,body{
+font-size: 20px;
+font-family:'Montserrat', sans-serif;
+
+}
+
+body
+{
+         padding: 0;
+         margin: 0;
+    font-family: sans-serif;
+
+    background-color: #5e42a6 !important;
+
+    
+}
+.banner1,.banner2,.banner3,.banner4{
+height: 100vh;
+width: 100%;
+position: absolute;
+left: 0;
+top: 0;
+
+
+}
+
+
+
+
+
+
+img
+{
+    content: "";
+    height:100%;
+    width: 77%;
+    position: absolute;
+    right: -15%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite;
+
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner1{
+    animation: slide1 12s linear infinite;
+}
+
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+
+.banner4{
+    animation: slide4 12s linear infinite;
+}
+
+
+@keyframes slide1{
+
+ 0%{ visibility:visible;
+}
+ 25%{ visibility:hidden;
+}
+    
+50%{ visibility:hidden;
+ }
+
+75%{
+           visibility: hidden;
+}
+
+100%{ visibility:visible;
+                }
+            }
+    
+             
+        
+@keyframes slide2{
+0%{ visibility:hidden;
+
+}
+
+25%{ visibility:hidden;
+                 }
+                
+                
+            
+                    50%{ visibility:visible;
+                     }
+                    
+                    
+                    75%{
+                        visibility: hidden;
+                     }
+             
+            
+                        100%{ visibility:visible;
+                            }
+                        }
+                    
+
+
+                    @keyframes slide3{
+
+                        0%{ visibility:hidden;
+                        
+                        }
+                        
+                        
+                            25%{ visibility:hidden;
+                             }
+                            
+                            
+                        
+                                50%{ visibility:hidden;
+                                 }
+                                
+                                
+                                75%{
+                                    visibility: visible;
+                                 }
+                         
+                                 
+                        
+                                    100%{ visibility:hidden;
+                                        }
+                                    }
+                                
+
+                                
+                                @keyframes slide4{
+
+                                    0%{ visibility:hidden;
+                                    
+                                    }
+                                    
+                                    
+                                        25%{ visibility:hidden;
+                                         }
+                                        
+                                        
+                                    
+                                            50%{ visibility:hidden;
+                                             }
+                                            
+                                            
+                                            75%{
+                                                visibility: hidden;
+                                             }
+                                     
+                                             
+                                    
+                                                100%{ visibility:visible;
+                                                    }
+                                                }
+
+
+
+                                                @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+                                            
+                        
+
+                                            
+                                                  
+                                                  .sidebar {
+                                                    position:fixed;
+                                                    width: 25%;
+                                                    height: 100vh;
+                                                    top: 0;
+                                                    
+                                                    background: #312450;
+                                                    font-size: 0.6em;
+                                                    left: 75%;
+                                                    bottom: 100%;
+                                                
+                                                  }
+                                                  
+                                                  .nav {
+                                                    position: relative;
+                                                    margin: 0 15%;
+                                                    text-align:left;
+                                                    
+                                                    font-weight: bold;
+                                                  }
+                                                  
+                                                  .nav ul {
+                                                    list-style: none;
+                                                  }
+                                                    
+                                                    li {
+                                                      position: relative;
+                                                      margin: 3.2em 0;
+                                                    }
+                                                      
+                                                      a {
+                                                        line-height: 5em;
+                                                        text-transform: uppercase;
+                                                        text-decoration: none;
+                                                        letter-spacing: 0.4em;
+                                                        color: rgba(#FFF, 0.35);
+                                                        display: block;
+                                                        transition: all ease-out 300ms;
+                                                        
+                                                      }
+
+                                                      .nav a:hover{
+                                                        color: #b74e91;
+                                                      }
+                                                      
+                                                      .active a {
+                                                        color: white;
+                                                        margin-top: 100px;
+                                                      }
+                                                      
+                                                      :not(.active)::after {
+                                                        opacity: 0.2;
+                                                      }
+                                                      
+                                                      :not(.active):hover a {
+                                                        color: rgba(#FFF, 0.75);
+                                                      }
+                                                      
+                                                      .nav a::after {
+                                                        content: '';
+                                                        position: absolute;
+                                                        width: 100%;
+                                                        height: 0.2em;
+                                                        background: black;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        background-image: linear-gradient(to right, #5e42a6, #b74e91);
+                                                      }
+                                                    
+                                                  
+                                                  
+
+                                                 
+                                                  
+                                                    
+                                                    .container {
+                                                      display: flex;
+                                                      flex-direction: column;
+                                                      align-items: center;
+                                                      justify-content: center;
+                                                      height: 100%;
+                                                      
+                                                    }
+                                                    
+                                                    a {
+                                                      position: relative;
+                                                      
+                                                      
+                                                    }
+                                                    p {
+                                                        text-transform: uppercase;
+                                                        font-size: 2em;
+                                                        letter-spacing: 0.1em;
+
+
+
+
+                                                        color: #FFF;
+                                                        font-weight: bold;
+                                                        margin-top: 20px;
+                                                    
+                                                      }
+                                                    
+                                                   
+                                                  .nav a{
+                                                      color: white;
+                                                      text-decoration:none;}
+
+                                                      nav ul a{
+                                                      font-size: 0.7rem !important;
+                                                      padding: 0 !important;
+                                                    }
+
+
+                                                    .container{
+                                                        position: absolute;
+                                                        font-size: 0.6rem;
+                                                        font-style: italic;
+                                                    
+                                                        }
+
+                                                        .nav {
+                                                          display: flex;
+                                                          flex-wrap: wrap;
+                                                          padding-left: 0;
+                                                          margin-bottom: 0;
+                                                          list-style: none;
+                                                      }
+
+                                                      #about_nav ul{
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                      }
+
+
+                                                      .carousel{
+                                                        height: 600px;
+                                                        perspective: 300px;
+                                                        left: -4%;
+                                                    }
+                                                    
+                                                    .carousel .carousel-item{
+                                                        width: 400px;
+                                                        height: 400px;
+                                                        
+                                                    }
+
+                                                    .text-box{
+                                                        
+                                                        
+                                                        bottom: -50px;
+                                                        left: 100px;
+                                                        color: white;
+                                                        width: 75%;
+                                                      font: size 100px;
+                                                    
+                                                    
+                                                        font-family:"Snell Roundhand",cursive;
+                                                        
+                                                        }
+                                                        
+                                                                                                                            
+                                                        .text-box p{
+                                                            padding: 20px;
+                                                        font-size: 14px;
+                                                        line-height: 18px;
+                                                        margin-top: 20px;
+                                                        background-color: black;
+                                                            color: white;
+                                                            opacity:0.6;
+                                                            
+                                                       
+                                                    }
+
+
+                                                    .text{
+                                                  font-size: 40px;
+                                                  font-family: cursive;
+                                                  color: rgb(100, 121, 160);
+
+
+                                                    }
+
+
+                                                       
+
+
+                                                        
+                                                       
+                                                        
+                                                        
